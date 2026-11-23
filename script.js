@@ -13,7 +13,7 @@
   let hintTimer;
 
   const accents = [
-    '#5fa8ff', '#cbd6e7', '#5fa8ff', '#5fa8ff', '#a979ff',
+    '#5fa8ff', '#cbd6e7', '#5fa8ff', '#5fa8ff', '#a979ff', '#a979ff',
     '#55cdb9', '#55cdb9', '#f0a35c', '#f0a35c', '#f0a35c', '#55cdb9'
   ];
 

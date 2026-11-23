@@ -1,59 +1,47 @@
-# Presentación web — TPI Clarolab 2026
+# TPI Clarolab 2026 · Presentación web
 
-Presentación HTML/CSS/JS del Trabajo Práctico Integrador de **Sistemas de Información (UNNOBA)** — Grupo 6, sede Junín.
+Presentación académica del **Trabajo Práctico Integrador de Sistemas de Información (UNNOBA)** — Grupo 6, sede Junín.
 
-## Enfoque de la presentación
+## Estructura
 
-La presentación no reproduce el informe completo. Organiza el TPI como una defensa académica breve:
+La presentación contiene **12 diapositivas**, distribuidas en **2 por integrante**:
 
-1. Diagnóstico de Clarolab.
-2. Modelo Clarolab–Cliente.
-3. Análisis del Sistema de Información.
-4. Hallazgo central del análisis.
-5. Problemas y necesidades de información.
-6. Propuesta integrada.
-7. Priorización por factibilidad A → B.
-8. CPM-PERT del piloto.
-9. Impacto esperado y conclusión.
+1. Maximiliano — Portada
+2. Maximiliano — Recorrido del TPI
+3. Matías — Clarolab y su contexto
+4. Matías — Modelo Clarolab–Cliente
+5. Christian — Metodología de relevamiento de la Etapa 2
+6. Christian — Procesos, herramientas y circulación de información
+7. Santiago — Hallazgo central del análisis
+8. Santiago — Problemas y necesidades de información
+9. Magalí — Propuesta integrada
+10. Magalí — Alternativas y estrategia progresiva A → B
+11. Ignacio — CPM-PERT e implementación
+12. Ignacio — Impacto esperado y conclusión
 
-Todos los diagramas principales están construidos con HTML/CSS/SVG, por lo que **no depende de imágenes ni enlaces de Moodle**.
+## Uso
+
+- `←` / `→`: navegar entre diapositivas.
+- `Espacio`: avanzar.
+- `F`: activar o salir de pantalla completa.
+- `H`: ocultar/mostrar la interfaz superior e inferior.
+- `Home` / `End`: ir a la primera o última diapositiva.
+
+La presentación está diseñada para funcionar **sin scroll**, incluso en pantalla completa. Si una diapositiva necesita más espacio, el contenido se ajusta automáticamente al viewport.
 
 ## Archivos
 
-- `index.html` — contenido de las 11 diapositivas.
-- `styles.css` — diseño, responsive, impresión y modo presentación.
-- `script.js` — navegación y controles.
+- `index.html` — estructura y contenido.
+- `styles.css` — diseño visual y responsive.
+- `script.js` — navegación, fullscreen y autoajuste.
 
-## Controles
+No utiliza frameworks ni recursos externos, por lo que puede publicarse directamente con GitHub Pages.
 
-- `→` / `Espacio`: avanzar.
-- `←`: retroceder.
-- `Home`: primera diapositiva.
-- `End`: última diapositiva.
-- `F`: pantalla completa.
-- `H`: ocultar/mostrar barras y controles para grabar el video.
-- En dispositivos táctiles: deslizar a izquierda/derecha.
+## GitHub Pages
 
-## Publicación en GitHub Pages
+Una vez subidos los archivos a la rama `main`:
 
-1. Crear un repositorio público, por ejemplo `tpi-clarolab-2026`.
-2. Subir `index.html`, `styles.css` y `script.js` a la raíz del repositorio.
-3. Ir a **Settings → Pages**.
-4. En **Build and deployment**, elegir **Deploy from a branch**.
-5. Seleccionar `main` y `/ (root)`.
-6. Guardar.
-
-GitHub Pages generará la URL pública del sitio.
-
-## Nota académica
-
-La presentación sintetiza el informe final del Grupo 6. Las propuestas, factibilidades y tiempos CPM-PERT son estimaciones académicas del grupo y no representan decisiones o compromisos oficiales de Clarolab.
-
-
-## Modo presentación
-
-- La presentación ocupa el viewport completo y **no utiliza scroll** entre diapositivas.
-- El contenido se ajusta automáticamente a la altura disponible.
-- La navegación inferior ocupa todo el ancho: flecha izquierda, progreso central y flecha derecha.
-- `F`: pantalla completa.
-- `H`: ocultar/mostrar barras de interfaz.
+1. Abrir **Settings → Pages**.
+2. En **Build and deployment**, elegir **Deploy from a branch**.
+3. Seleccionar `main` y `/ (root)`.
+4. Guardar.
