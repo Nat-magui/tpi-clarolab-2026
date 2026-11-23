@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1424" />
+  <meta name="description" content="Presentación web del TPI 2026 de Sistemas de Información - UNNOBA - Grupo 6 - Caso Clarolab" />
+  <title>TPI 2026 · Clarolab · Sistemas de Información · Grupo 6</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="presentation" id="presentation">
+    <header class="chrome" aria-label="Controles de la presentación">
+      <div class="chrome-left">
+        <span class="course">Sistemas de Información · UNNOBA</span>
+      </div>
+      <div class="chrome-right">
+        <span class="counter" id="counter">01 / 11</span>
+        <button id="fullscreenBtn" class="control-btn" type="button" title="Pantalla completa (F)" aria-label="Pantalla completa">⛶</button>
+      </div>
+    </header>
+
+    <main class="slides" id="slides">
+
+      <!-- 01 · Portada -->
+      <section class="slide active theme-blue" data-title="Portada">
+        <div class="cover center-stage">
+          <svg class="network-art" viewBox="0 0 900 520" aria-hidden="true">
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5fa8ff" stop-opacity=".58" />
+                <stop offset="100%" stop-color="#65dbc7" stop-opacity=".18" />
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#lineGrad)" stroke-width="2">
+              <path d="M105 105 L255 175 L420 105 L575 205 L760 120" />
+              <path d="M255 175 L310 360 L520 405 L575 205" />
+              <path d="M420 105 L520 405" />
+              <path d="M105 105 L170 330 L310 360" />
+              <path d="M760 120 L720 350 L520 405" />
+            </g>
+            <g fill="#b9d6ff" opacity=".85">
+              <circle cx="105" cy="105" r="7"/><circle cx="255" cy="175" r="8"/><circle cx="420" cy="105" r="7"/>
+              <circle cx="575" cy="205" r="9"/><circle cx="760" cy="120" r="7"/><circle cx="170" cy="330" r="7"/>
+              <circle cx="310" cy="360" r="9"/><circle cx="520" cy="405" r="8"/><circle cx="720" cy="350" r="7"/>
+            </g>
+          </svg>
+
+          <div class="cover-copy">
+            <p class="kicker">TRABAJO PRÁCTICO INTEGRADOR · 2026</p>
+            <h1>Planificación Estratégica del<br><span>Sistema de Información</span></h1>
+            <p class="case">Caso de estudio: <strong>Clarolab</strong></p>
+
+            <div class="cover-meta">
+              <div>
+                <span class="meta-label">Asignatura</span>
+                <strong>Sistemas de Información</strong>
+              </div>
+              <div>
+                <span class="meta-label">Grupo</span>
+                <strong>6 · Sede Junín</strong>
+              </div>
+              <div>
+                <span class="meta-label">Docentes</span>
+                <strong>Prof. Verónica Mangini · Prof. Leandro Chivel</strong>
+              </div>
+            </div>
+
+            <div class="members-line" aria-label="Integrantes del Grupo 6">
+              <span>Maximiliano Claudio Lagos</span>
+              <span>Matías Lega</span>
+              <span>Christian Adalberto Maccarino</span>
+              <span>Santiago Menendez Desimone</span>
+              <span>Magalí Aldana Suarez</span>
+              <span>Ignacio Jeremias Medina</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 · Recorrido -->
+      <section class="slide theme-neutral" data-title="Recorrido del TPI">
+        <div class="content-shell centered">
+          <div class="section-label">RECORRIDO DEL TPI</div>
+          <h2>Del diagnóstico a una propuesta de mejora</h2>
+          <p class="intro-copy">Las cuatro etapas conforman una secuencia incremental: primero comprendimos la organización, luego modelamos su Sistema de Información, identificamos necesidades y finalmente evaluamos alternativas de mejora.</p>
+
+          <div class="journey-grid">
+            <article class="journey-card j1">
+              <span class="step-number">01</span>
+              <h3>Diagnóstico</h3>
+              <p>Comprender la organización, su estructura y su relación con el entorno.</p>
+            </article>
+            <div class="journey-arrow">→</div>
+            <article class="journey-card j2">
+              <span class="step-number">02</span>
+              <h3>Análisis del SI</h3>
+              <p>Identificar actores, procesos, flujos de información y herramientas.</p>
+            </article>
+            <div class="journey-arrow">→</div>
+            <article class="journey-card j3">
+              <span class="step-number">03</span>
+              <h3>Necesidades</h3>
+              <p>Detectar limitaciones de disponibilidad, acceso y consolidación.</p>
+            </article>
+            <div class="journey-arrow">→</div>
+            <article class="journey-card j4">
+              <span class="step-number">04</span>
+              <h3>Propuesta</h3>
+              <p>Priorizar alternativas y planificar una implementación factible.</p>
+            </article>
+          </div>
+
+          <p class="source-note">Enfoque: comprender → analizar → identificar necesidades → proponer y planificar.</p>
+        </div>
+      </section>
+
+      <!-- 03 · Etapa 1 -->
+      <section class="slide theme-blue" data-title="Etapa 1 · Clarolab y su contexto">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 1 · DIAGNÓSTICO</div>
+          <h2>Clarolab: una organización orientada a servicios tecnológicos</h2>
+          <p class="intro-copy">El relevamiento permitió identificar la estructura general de la organización y ubicar a Ingeniería/Desarrollo como el núcleo principal de la prestación tecnológica.</p>
+
+          <div class="facts-grid">
+            <article class="fact-card">
+              <span class="fact-icon">◉</span>
+              <strong>≈ 80</strong>
+              <p>colaboradores relevados de forma aproximada</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-icon">⌂</span>
+              <strong>2 sedes</strong>
+              <p>Junín y Pergamino, más trabajo remoto</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-icon">▦</span>
+              <strong>3 áreas</strong>
+              <p>Ingeniería/Desarrollo · RR. HH. · Marketing</p>
+            </article>
+            <article class="fact-card emphasis">
+              <span class="fact-icon">⚙</span>
+              <strong>≈ 70</strong>
+              <p>personas en Ingeniería/Desarrollo, área central del servicio</p>
+            </article>
+          </div>
+
+          <div class="key-thesis blue-accent">
+            <span class="thesis-tag">HALLAZGO DE CONTEXTO</span>
+            <p>La estructura organizacional de Clarolab convive con estructuras operativas pertenecientes a sus clientes.</p>
+          </div>
+          <p class="source-note">Elaboración propia a partir del relevamiento del Grupo 6.</p>
+        </div>
+      </section>
+
+      <!-- 04 · Modelo Clarolab-Cliente -->
+      <section class="slide theme-blue" data-title="Modelo Clarolab–Cliente">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 1 · MODELO DE TRABAJO</div>
+          <h2>Un profesional, dos contextos organizacionales</h2>
+          <p class="intro-copy">El profesional mantiene su vínculo organizacional con Clarolab mientras desarrolla su actividad cotidiana dentro del entorno del cliente.</p>
+
+          <div class="dual-context" role="img" aria-label="Modelo de integración Clarolab, profesional y cliente">
+            <article class="context-panel clarolab-panel">
+              <span class="context-kicker">CLAROLAB</span>
+              <h3>Vínculo organizacional</h3>
+              <ul>
+                <li>Recursos Humanos</li>
+                <li>Capacitación</li>
+                <li>Seguimiento</li>
+                <li>Gestión contractual</li>
+              </ul>
+            </article>
+
+            <div class="context-link left-link"><span>↔</span></div>
+
+            <article class="professional-node">
+              <div class="person-icon">●</div>
+              <h3>Profesional</h3>
+              <p>Integra el equipo del cliente sin perder su pertenencia a Clarolab.</p>
+            </article>
+
+            <div class="context-link right-link"><span>↔</span></div>
+
+            <article class="context-panel client-panel">
+              <span class="context-kicker">CLIENTE</span>
+              <h3>Contexto operativo</h3>
+              <ul>
+                <li>Prioridades</li>
+                <li>Procesos</li>
+                <li>Herramientas</li>
+                <li>Ejecución cotidiana</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="key-thesis blue-accent compact">
+            <p><strong>El cliente</strong> define principalmente la operación cotidiana; <strong>Clarolab</strong> conserva funciones de acompañamiento, capacitación, RR. HH. y gestión contractual.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 · Etapa 2 -->
+      <section class="slide theme-purple" data-title="Etapa 2 · Análisis del Sistema de Información">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 2 · ANÁLISIS DEL SISTEMA DE INFORMACIÓN</div>
+          <h2>De casos concretos a un modelo general de procesos</h2>
+
+          <div class="method-strip">
+            <span><b>1</b> Entrevista inicial</span>
+            <span><b>2</b> Formulario exploratorio</span>
+            <span><b>3</b> Consultas complementarias</span>
+          </div>
+
+          <div class="process-model" role="img" aria-label="Modelo general de procesos relevado">
+            <div class="process-node"><span>1</span><strong>Recepción y análisis</strong><small>necesidad · solicitud · incidente</small></div>
+            <div class="process-arrow">→</div>
+            <div class="process-node"><span>2</span><strong>Planificación</strong><small>prioridades · participantes · coordinación</small></div>
+            <div class="process-arrow">→</div>
+            <div class="process-node"><span>3</span><strong>Ejecución</strong><small>actividad técnica</small></div>
+            <div class="process-arrow">→</div>
+            <div class="process-node"><span>4</span><strong>Validación</strong><small>seguimiento · ajustes</small></div>
+            <div class="process-arrow">→</div>
+            <div class="process-node"><span>5</span><strong>Documentación</strong><small>registro · cierre</small></div>
+          </div>
+
+          <div class="tool-roles">
+            <div><span class="tool-label">Gestión</span><strong>Jira / equivalentes</strong></div>
+            <div><span class="tool-label">Comunicación</span><strong>Slack / correo / reuniones</strong></div>
+            <div><span class="tool-label">Conocimiento</span><strong>Wiki / Confluence / docs</strong></div>
+            <div><span class="tool-label">Repositorios</span><strong>Git / GitHub / otros</strong></div>
+            <div><span class="tool-label">Operación</span><strong>Monitoreo / PagerDuty</strong></div>
+          </div>
+
+          <div class="academic-note purple-note">
+            <strong>Alcance metodológico:</strong> el relevamiento fue exploratorio. Los procesos y herramientas pueden variar según cliente, proyecto y contrato.
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 · Hallazgo central -->
+      <section class="slide theme-teal" data-title="Hallazgo central">
+        <div class="content-shell centered narrow-shell">
+          <div class="section-label">DEL ANÁLISIS AL PROBLEMA DE INFORMACIÓN</div>
+          <h2>El problema no es “falta de software”</h2>
+          <p class="intro-copy">El punto central aparece cuando distinguimos la operación técnica del cliente de la información organizacional que Clarolab necesita para gestionar sus propias asignaciones.</p>
+
+          <div class="logic-chain" role="img" aria-label="Cadena lógica desde la operación del cliente hasta la necesidad de información propia">
+            <div class="logic-node external"><small>OPERACIÓN</small><strong>Información en entornos del cliente</strong></div>
+            <div class="logic-arrow">↓</div>
+            <div class="logic-node"><small>EFECTO</small><strong>Información distribuida y acceso limitado</strong></div>
+            <div class="logic-arrow">↓</div>
+            <div class="logic-node"><small>IMPACTO</small><strong>Menor visibilidad organizacional para Clarolab</strong></div>
+            <div class="logic-arrow">↓</div>
+            <div class="logic-node solution"><small>NECESIDAD</small><strong>Información mínima propia, actualizada y consolidada</strong></div>
+          </div>
+
+          <div class="key-thesis teal-accent">
+            <span class="thesis-tag">DESAFÍO CENTRAL</span>
+            <p>Disponer de información suficiente para realizar seguimiento y tomar decisiones <strong>sin acceder a información técnica o confidencial del cliente</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 · Etapa 3 -->
+      <section class="slide theme-teal" data-title="Etapa 3 · Problemas y necesidades">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 3 · PUNTOS DE ATENCIÓN Y NECESIDADES</div>
+          <h2>Cuatro situaciones, cuatro necesidades de información</h2>
+
+          <div class="problem-table" role="table" aria-label="Problemas y necesidades de información">
+            <div class="problem-row header" role="row">
+              <div role="columnheader">Situación identificada</div>
+              <div role="columnheader">Necesidad de información</div>
+            </div>
+            <div class="problem-row" role="row">
+              <div role="cell"><span>01</span><strong>Visibilidad limitada</strong><small>sobre el estado de las asignaciones</small></div>
+              <div role="cell">Estado resumido, continuidad, feedback y acompañamiento.</div>
+            </div>
+            <div class="problem-row" role="row">
+              <div role="cell"><span>02</span><strong>Dependencia de sistemas externos</strong><small>herramientas y accesos del cliente</small></div>
+              <div role="cell">Conjunto mínimo de datos disponible para Clarolab.</div>
+            </div>
+            <div class="problem-row" role="row">
+              <div role="cell"><span>03</span><strong>Información distribuida</strong><small>entre múltiples clientes y proyectos</small></div>
+              <div role="cell">Visión transversal de profesionales, proyectos y responsables.</div>
+            </div>
+            <div class="problem-row" role="row">
+              <div role="cell"><span>04</span><strong>Seguimiento basado en feedback</strong><small>instancias no operativas</small></div>
+              <div role="cell">Registro actualizado de observaciones, necesidades y acciones.</div>
+            </div>
+          </div>
+
+          <div class="strength-band">
+            <span class="strength-plus">+</span>
+            <div>
+              <strong>Fortaleza existente</strong>
+              <p>Clararolab ya realiza instancias para compartir aprendizajes entre profesionales asignados a distintos clientes; la transferencia de conocimiento no fue considerada una falencia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 · Etapa 4 -->
+      <section class="slide theme-orange" data-title="Etapa 4 · Propuesta integrada">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 4 · PROPUESTA DE MEJORA</div>
+          <h2>Una solución organizacional integrada</h2>
+          <p class="intro-copy">Las recomendaciones se plantean como componentes de una misma estrategia, no como cuatro sistemas independientes.</p>
+
+          <div class="solution-system" role="img" aria-label="Componentes de la propuesta integrada">
+            <div class="solution-orbit orbit-a"><strong>Ficha estandarizada</strong><small>datos organizacionales mínimos</small></div>
+            <div class="solution-orbit orbit-b"><strong>Feedback estructurado</strong><small>seguimiento + acciones</small></div>
+            <div class="solution-core"><span>SI</span><strong>Seguimiento de asignaciones</strong><small>información propia de Clarolab</small></div>
+            <div class="solution-orbit orbit-c"><strong>Gobernanza y permisos</strong><small>quién accede · quién actualiza</small></div>
+            <div class="solution-orbit orbit-d"><strong>Registro y tablero</strong><small>visión consolidada + alertas</small></div>
+          </div>
+
+          <div class="data-principle">
+            <div>
+              <span class="principle-tag">PRINCIPIO DE DISEÑO</span>
+              <strong>Minimización de datos</strong>
+              <p>Conservar únicamente la información necesaria para la gestión organizacional de Clarolab.</p>
+            </div>
+            <div class="excluded-data">
+              <span>No se replica</span>
+              <b>código fuente</b><b>credenciales</b><b>tickets internos</b><b>incidentes confidenciales</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 · Alternativas -->
+      <section class="slide theme-orange" data-title="Priorización por factibilidad">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 4 · PRIORIZACIÓN POR FACTIBILIDAD</div>
+          <h2>Primero validar el proceso; después escalar la tecnología</h2>
+          <p class="intro-copy">Se compararon alternativas de complejidad creciente para evitar sobredimensionar la solución antes de comprobar su utilidad.</p>
+
+          <div class="alternatives">
+            <article class="alternative selected">
+              <span class="alt-letter">A</span>
+              <div>
+                <p class="alt-phase">FASE 1</p>
+                <h3>Estandarización básica</h3>
+                <p>Fichas, formularios, responsables, periodicidad y reglas de acceso.</p>
+                <strong>Factibilidad alta</strong>
+              </div>
+            </article>
+            <div class="alt-arrow">→</div>
+            <article class="alternative selected">
+              <span class="alt-letter">B</span>
+              <div>
+                <p class="alt-phase">FASE 2</p>
+                <h3>Registro y tablero configurables</h3>
+                <p>Centralización, filtros, alertas, recordatorios y consulta transversal.</p>
+                <strong>Factibilidad media</strong>
+              </div>
+            </article>
+            <div class="alt-arrow faint">→</div>
+            <article class="alternative deferred">
+              <span class="alt-letter">C</span>
+              <div>
+                <p class="alt-phase">SOLO SI SE JUSTIFICA</p>
+                <h3>Desarrollo a medida</h3>
+                <p>Mayor personalización, pero también mayor costo, mantenimiento y riesgo.</p>
+                <strong>Factibilidad baja–media</strong>
+              </div>
+            </article>
+          </div>
+
+          <div class="strategy-banner">
+            <span>Estrategia priorizada</span>
+            <strong>A → B</strong>
+            <p>La solución tecnológica se incorpora de manera progresiva, luego de validar el modelo de información y el proceso de seguimiento.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 · CPM-PERT -->
+      <section class="slide theme-orange" data-title="CPM-PERT e implementación">
+        <div class="content-shell centered">
+          <div class="section-label">ETAPA 4 · PLAN DE IMPLEMENTACIÓN</div>
+          <h2>CPM–PERT del piloto propuesto</h2>
+          <p class="intro-copy">Las duraciones son estimaciones académicas del grupo. El objetivo es visualizar dependencias, actividades críticas y margen de ejecución.</p>
+
+          <div class="critical-route" role="img" aria-label="Ruta crítica A B D E F H I J">
+            <div class="crit-node"><b>A</b><span>Alcance</span><small>2 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>B</b><span>Datos mínimos</span><small>3 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>D</b><span>Diseño de fichas</span><small>3 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>E</b><span>Herramienta</span><small>2 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>F</b><span>Configuración</span><small>4 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>H</b><span>Prueba</span><small>3 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>I</b><span>Capacitación</span><small>2 d</small></div>
+            <i>→</i>
+            <div class="crit-node"><b>J</b><span>Evaluación</span><small>3 d</small></div>
+          </div>
+
+          <div class="pert-metrics">
+            <article><span>Ruta crítica</span><strong>A → B → D → E → F → H → I → J</strong></article>
+            <article class="duration"><span>Duración esperada</span><strong>22 días hábiles</strong></article>
+            <article><span>Holgura estimada</span><strong>C: 1 día · G: 4 días</strong></article>
+          </div>
+
+          <div class="parallel-note">
+            <span>C · permisos y confidencialidad</span>
+            <span>G · formulario y rutina de feedback</span>
+            <small>Actividades que pueden ejecutarse en paralelo sin modificar la ruta crítica, dentro de su holgura.</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 · Cierre -->
+      <section class="slide theme-teal" data-title="Impacto esperado y conclusión">
+        <div class="content-shell centered">
+          <div class="section-label">CONCLUSIÓN</div>
+          <h2>¿Qué cambia con la propuesta?</h2>
+
+          <div class="impact-grid">
+            <article><span>01</span><strong>Disponibilidad</strong><p>Información organizacional propia y accesible.</p></article>
+            <article><span>02</span><strong>Trazabilidad</strong><p>Seguimientos, decisiones y acciones registrados.</p></article>
+            <article><span>03</span><strong>Visión transversal</strong><p>Asignaciones consultables de forma consolidada.</p></article>
+            <article><span>04</span><strong>Confidencialidad</strong><p>Sin replicar la operación técnica del cliente.</p></article>
+          </div>
+
+          <div class="closing-thesis">
+            <p>La propuesta no reemplaza los sistemas del cliente:</p>
+            <h3>fortalece el Sistema de Información propio de Clarolab.</h3>
+          </div>
+
+          <div class="closing-flow">
+            <span>Diagnóstico</span><b>→</b><span>Información</span><b>→</b><span>Decisión</span><b>→</b><span>Mejora</span>
+          </div>
+
+          <p class="thanks">Gracias</p>
+          <p class="source-note">Grupo 6 · Sistemas de Información · UNNOBA · 2026</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bottom-bar">
+      <button class="nav-btn edge-nav" id="prevBtn" type="button" aria-label="Anterior">←</button>
+      <div class="progress-zone">
+        <span class="slide-title" id="slideTitle">Portada</span>
+        <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+      <button class="nav-btn edge-nav" id="nextBtn" type="button" aria-label="Siguiente">→</button>
+    </footer>
+
+    <div class="key-hint" id="keyHint">← → navegar · F pantalla completa · H ocultar controles</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
